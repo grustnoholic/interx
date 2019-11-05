@@ -10,12 +10,15 @@ import Login from './components/login.component';
 
 function App() {
   return (
+    
     <Router>
       <Navbar />
       <br/>
+      <div id="wrapper">
       <Route path="/" exact component = {Home} />
       <Route path="/users/add"  component = {CreateUser} />
       <Route path="/login"  component = {Login} />
+      </div>
     </Router>
   );
 }
